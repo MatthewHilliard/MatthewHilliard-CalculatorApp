@@ -2,13 +2,11 @@ package com.example.matthewhilliard_calculatorapp
 
 import android.os.Bundle
 import android.text.InputType
-import android.text.InputType.TYPE_NUMBER_FLAG_DECIMAL
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import kotlin.math.sqrt
-
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -16,8 +14,6 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val calculation = findViewById<EditText>(R.id.calculation)
-        val firstNum=""
-        val isNegative = false
 
         val zeroButton = findViewById<Button>(R.id.zeroButton)
         val oneButton = findViewById<Button>(R.id.oneButton)
